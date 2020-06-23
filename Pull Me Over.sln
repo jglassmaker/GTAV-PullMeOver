@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2050
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PullMeOver", "pullmeover\PullMeOver.csproj", "{E4F95C4B-3FB0-42CE-8B95-05240870F77C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pull Me Over", "Pull Me Over/Pull Me Over.csproj", "{E4F95C4B-3FB0-42CE-8B95-05240870F77C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

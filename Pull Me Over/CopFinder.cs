@@ -26,7 +26,7 @@ namespace PullMeOver
             {
                 if (coplist.Contains(copsi[i]))
                     continue;
-                if ((Function.Call<int>(Hash.GET_PED_TYPE, copsi[i]) == 6 || addonpeds.Contains(copsi[i].Model.Hash)) && !copsi[i].IsPlayer)
+                if ((Function.Call<int>(Hash.GET_PED_TYPE, copsi[i]) == 6 || addonpeds.Contains(copsi[i].Model.Hash) || addonpeds2.Contains((PedHash)copsi[i].Model.Hash)) && !copsi[i].IsPlayer)
                 {
                     coplist.Add(copsi[i]); 
                 }

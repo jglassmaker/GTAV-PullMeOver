@@ -92,6 +92,7 @@ namespace PullMeOver
         int settingexpireminutes;
         int aikanyt = DateTime.Now.Second;
         internal static int[] addonpeds = { 2119533924, 1388307514, -1391788292, -1713450450, -560354151, -482908958, 1481343398, 640852342, 2017510805, -1883678939 };
+        internal static List<PedHash> addonpeds2 = new List<PedHash>() { PedHash.FibOffice01SMM, PedHash.FibOffice02SMM, PedHash.FibSec01, PedHash.FibSec01SMM };
         int[] trafficlights = { 1043035044, 865627822, 862871082, -655644382 };
         int language = 0;
 
@@ -1190,6 +1191,9 @@ namespace PullMeOver
             if (scriptenabled && Game.Player.WantedLevel == 0)
             {
                 if (!Game.Player.Character.IsInVehicle())
+                    return;
+
+                if (Game.Player.Character.CurrentVehicle.Model.IsBicycle)
                     return;
                 
                 if (Function.Call<bool>(Hash.IS_VEHICLE_SIREN_ON, playerVehicle))
